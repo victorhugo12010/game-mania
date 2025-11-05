@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Game Mania</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Seu CSS Customizado -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="site-header sticky-top">
+        <!-- Header Superior -->
+        <nav class="container-fluid py-2">
+            <ul class="list-unstyled m-0">
+                <li class="d-flex flex-wrap align-items-center justify-content-between">
+                    <figure class="mb-0 me-3">
+                        <a href="index.html" class="logo-text">
+                            <img src="assets/imagens/LOGO.png" alt="Logotipo Game Mania" class="logo">
+                        </a>
+                    </figure>
+
+                    <form action="#" class="search-bar flex-grow-1 mx-md-4 my-2 my-md-0 order-3 order-md-2">
+                        <input type="text" placeholder="Encontre sua nova aquisição aqui!" class="search-input form-control">
+                        <button type="submit" class="search-button btn p-0">
+                            <img src="assets/imagens/lupa.png" class="search-image" alt="Pesquisar">
+                        </button>
+                    </form>
+
+                    <nav class="user-actions d-flex align-items-center me-3 order-2 order-md-3">
+                        <figure class="mb-0">
+                            <img src="assets/imagens/usuario.png" alt="Icone de login da conta" class="user-icon">
+                        </figure>
+                        <nav class="user-text ms-2">
+                            <span>Olá, <a href="login.html" class="user-link">Entre</a> ou</span>
+                            <a href="cadastre-se.html" class="user-link d-block">Cadastre-se</a>
+                        </nav>
+                    </nav>
+
+                    <nav class="icons-container d-flex align-items-center order-2 order-md-4">
+                        <figure class="mb-0 me-3">
+                            <a href="favoritos.html">
+                                <img src="assets/imagens/favorito_1.png" alt="Botão de produtos favoritos" class="icons-image favorite">
+                            </a>
+                        </figure>
+                        <figure class="mb-0">
+                            <a href="carrinho.html">
+                                <img src="assets/imagens/carrinho_1.png" alt="Botão de carrinho de compras" class="icons-image cart">
+                            </a>
+                        </figure>
+                    </nav>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Menu de Navegação Principal -->
+        <nav class="menu-bar navbar navbar-expand-lg">
+            <section class="container-fluid justify-content-center">
+                <ul class="navbar-nav">
+                    
+                    <li class="nav-item"><a class="nav-link" href="#">Hardware</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">PC Gamer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Computadores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Escritório</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Mouses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Gabinetes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Teclados</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Fones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Acessórios</a></li>
+               
+                </ul>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Banner com Carousel do Bootstrap -->
+        <nav id="bannerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <section class="carousel-indicators">
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </section>
+            <figure class="carousel-inner mb-0">
+                <section class="carousel-item active"><img src="assets/imagens/imagem01.jpg" class="d-block w-100" alt="..."></section>
+                <section class="carousel-item"><img src="assets/imagens/imagem02.jpg" class="d-block w-100" alt="..."></section>
+                <section class="carousel-item"><img src="assets/imagens/imagem03.jpg" class="d-block w-100" alt="..."></section>
+                <section class="carousel-item"><img src="assets/imagens/imagem04.jpg" class="d-block w-100" alt="..."></section>
+                <section class="carousel-item"><img src="assets/imagens/imagem05.jpg" class="d-block w-100" alt="..."></section>
+            </figure>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span></button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span></button>
+        </nav>
+
+        <!-- Seção de Produtos -->
+        <nav class="produtos container my-5">
+            <h2 class="text-center mb-4">Produtos mais vendidos</h2>
+            <section class="product-list row g-4">
+                <!-- Itens de produto -->
+                <article class="product-item col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column">
+                    <img src="assets/imagens/produto1.jpg" alt="Imagem do Produto 1" class="product-image img-fluid">
+                    <h3 class="product-title">Aura-X Pro Headset</h3>
+                    <p class="product-price">R$ 449,90</p>
+                    <button class="add-to-cart btn btn-success mt-auto">Adicionar ao Carrinho</button>
+                </article>
+                <!-- Repita o <article> para os outros 7 produtos -->
+                <article class="product-item col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column"><img src="assets/imagens/produto2.jpg" alt="Imagem do Produto 2" class="product-image img-fluid"><h3 class="product-title">Phantom Sound V2</h3><p class="product-price">R$ 179,90</p><button class="add-to-cart btn btn-success mt-auto">Adicionar ao Carrinho</button></article>
+                <article class="product-item col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column"><img src="assets/imagens/produto3.jpg" alt="Imagem do Produto 3" class="product-image img-fluid"><h3 class="product-title">Nexus-Gaming 'Dominator'</h3><p class="product-price">R$ 6.899,00</p><button class="add-to-cart btn btn-success mt-auto">Adicionar ao Carrinho</button></article>
+                <article class="product-item col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column"><img src="assets/imagens/produto4.jpg" alt="Imagem do Produto 4" class="product-image img-fluid"><h3 class="product-title">Kit Periféricos 'Hyperion Prime'</h3><p class="product-price">R$ 599,90</p><button class="add-to-cart btn btn-success mt-auto">Adicionar ao Carrinho</button></article>
+                <article class="product-item col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column"><img src="assets/imagens/produto5.png" alt="Imagem do Produto 5" class="product-image img-fluid"><h3 class="product-title">Stealth PC Alpha</h3><p class="product-price">R$ 3.499,00</p><button class="add-to-cart btn btn-success mt-auto">Adicionar ao Carrinho</button></article>
+                <article class="product-item col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column"><img src="assets/imagens/produto6.jpg" alt="Imagem do Produto 6" class="product-image img-fluid"><h3 class="product-title">Viper-Speed Honeycomb</h3><p class="product-price">R$ 289,90</p>
+                    <button class="add-to-cart btn btn-success mt-auto">Adicionar ao Carrinho</button>
+                </article>
+                <article class="product-item col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column"><img src="assets/imagens/produto7.jpg" alt="Imagem do Produto 7" class="product-image img-fluid"><h3 class="product-title">ChromaBurst Deluxe</h3><p class="product-price">R$ 9.799,00</p><button class="add-to-cart btn btn-success mt-auto">Adicionar ao Carrinho</button></article>
+                <article class="product-item col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column"><img src="assets/imagens/produto 8.jpg" alt="Imagem do Produto 8" class="product-image img-fluid"><h3 class="product-title">Raptor-Grip Precision</h3><p class="product-price">R$ 139,90</p><button class="add-to-cart btn btn-success mt-auto">Adicionar ao Carrinho</button></article>
+            </section>
+        </nav>
+    </main>
+
+<footer class="site-footer">
+  <div class="footer-content container py-5">
+    
+    <div class="row g-4 align-items-start justify-content-between">
+      
+      <div class="footer-section col-12 col-md-6 col-lg-3">
+        <h2>Fale Conosco</h2>
+        <ul class="list-unstyled">
+          <li>Av. Sen. Feijó, 421 - Vila Nova, Santos/SP</li>
+          <li>Email: contato@gamemania.com.br</li>
+          <li>Telefone: (13) 98127-1301</li>
+        </ul>
+      </div>
+      
+      <div class="footer-section col-12 col-md-6 col-lg-3">
+        <h2>Redes Sociais</h2>
+        <ul class="social-media-links list-unstyled">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section col-12 col-md-6 col-lg-3">
+        <h2>Formas de Pagamento</h2>
+        <ul class="payment-methods list-unstyled">
+          <li>Cartão de Crédito</li>
+          <li>Boleto Bancário</li>
+          <li>Pix</li> 	 
+        </ul>
+      </div>
+      
+      <div class="footer-section col-12 col-md-6 col-lg-3 mapa-loja">
+        <h2>Como chegar:</h2>
+        <div style="height: 200px; width: 400%;"> 
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.444031266622!2d-46.3263441!3d-23.9447337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce0377ed5a95db%3A0xe53a91cd6e25d884!2sSENAI%20Santos!5e0!3m2!1spt-BR!2sbr!4v1762299540670!5m2!1spt-BR!2sbr"
+            width="100%" 
+            height="100%" 
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+      
+    </div>
+    <div class="copyright text-center pt-4 mt-4 w-100">
+      <p class="mb-0">© 2025 Game Mania. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
