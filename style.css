@@ -1,0 +1,252 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header principal */
+.site-header {
+    background-color: #0900af;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+.logo {
+    width: 180px;
+    height: auto;
+    padding-left: 45px;
+}
+
+/* Barra de busca */
+.search-bar {
+    position: relative;
+    max-width: 800px;
+}
+
+.search-input.form-control {
+    border-radius: 10px;
+    padding-right: 45px; /* Espaço para o ícone da lupa */
+}
+
+.search-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+}
+
+.search-image {
+    width: 20px;
+    height: 20px;
+}
+
+/* Área do usuário */
+.user-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.user-text {
+    font-size: 14px;
+    color: white;
+    line-height: 1.2;
+}
+
+.user-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.user-link:hover {
+    color: #ffd700;
+}
+
+/* Ícones */
+.icons-image {
+    width: 40px;
+    height: 35px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    
+}
+
+.favorite:hover {
+    content: url('../imagens/favorito_2.png');
+    transform: scale(1.1);
+}
+
+.cart:hover {
+    content: url('../imagens/carrinho_2.png');
+    transform: scale(1.1);
+}
+
+/* Menu de navegação */
+.menu-bar {
+    background-color: #ff9100;
+}
+
+.menu-bar .nav-link {
+    color: white;
+    font-size: 16px;
+    padding: 8px 16px;
+    margin: 0 8px;
+    transition: color 0.3s;
+}
+
+.menu-bar ul li {
+  display: inline-block; /* ou flex inline */
+  padding: 0px 6px;
+  border-right: 1px solid white; /* barra vertical */
+  margin-left: 0px; /* espaçamento entre itens */
+  margin-right: 0px; /* espaçamento entre itens */
+}
+
+.menu-bar ul li:last-child {
+  border-right: none; /* remove bar no último item */
+  margin-right: 0;
+}
+
+.menu-bar .nav-link:hover,
+.menu-bar .nav-link:focus {
+    color: #ffd700;
+}
+
+.dropdown-menu {
+    background-color: #0900af;
+}
+.dropdown-item {
+    color: white;
+}
+.dropdown-item:hover {
+    background-color: #072033;
+    color: #ffd700;
+}
+
+
+/* Seção de Produtos */
+.produtos h2 {
+    color: #072033;
+    font-weight: bold;
+}
+
+.product-item {
+    background: #ffffff;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* Garante que o flex-column funcione */
+    flex-direction: column;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.product-image {
+    border-radius: 4px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1; /* Mantém a imagem quadrada */
+}
+
+.product-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #072033;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 20px;
+    color: #072033;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.add-to-cart.btn-success {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.add-to-cart.btn-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+}
+
+/* Estilo do Footer */
+.site-footer {
+    background: linear-gradient(90deg, #0900af 0%, #0900af 100%);
+    color: #ffffff;
+}
+
+.footer-section h2 {
+    color: #ffd700;
+    font-size: 18px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-section a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #ffd700;
+}
+
+.newsletter-input {
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.1);
+    color: #ffffff;
+}
+.newsletter-input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+.copyright {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 14px;
+}
+
+/* Estilos para Páginas de Formulário (Login/Cadastro) */
+.form-page-main {
+    background-color: #f4f4f4; /* Um fundo suave para a área do formulário */
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.form-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+    color: #0900af;
+    font-weight: bold;
+}
+
+/*rodapé*/
+.site-footer {
+    background-color: #0900af;
+    color: #ffffff;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* outros estilos já presentes */
+}
+
+.mapa-loja {
+  min-width: 350px;
+}
